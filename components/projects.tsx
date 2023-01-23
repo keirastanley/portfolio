@@ -11,7 +11,7 @@ export default function Projects() {
     return <div className={styles.projects_container}>
         <div className={styles.project_icons}>
             <Link href="/"><div className={styles.close_button}><button></button></div></Link>
-            {view === undefined ? projects.map(project => <div className={styles.project} onClick={() => setView(project)}>
+            {view === undefined ? projects.map(project => <div className={styles.project} onClick={() => setView(project)} key={project.name}>
             <div className={styles.hover_container}>
                 <div className={styles.hover_target}>
                     <img src="/images/icons/soft-folder.png" className={styles.folder_icon}></img>
