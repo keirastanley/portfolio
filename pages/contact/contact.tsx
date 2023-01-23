@@ -1,5 +1,11 @@
 import Contact from "@/components/contact";
+import Head from "next/head";
 
 export default function ContactPage() {
-    return <Contact/>
+    return <>
+        <Head>
+    <title>Contact</title>
+    </Head>
+    <Contact/>
+    </>
 }
