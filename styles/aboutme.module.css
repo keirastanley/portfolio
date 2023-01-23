@@ -1,0 +1,15 @@
+.aboutme_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url('/images/icons/soft-window.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 750px;
+}
+
+.aboutme_text {
+    margin-top: 100px;
+    width: 520px;
+}

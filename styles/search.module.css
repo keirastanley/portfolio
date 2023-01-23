@@ -1,0 +1,33 @@
+.search_section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.search_input_container {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    width: 160px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search_section {
+    display: flex;
+    width: 25%;
+    gap: 5px;
+    justify-content: center;
+}
+
+.search_section > button {
+    width: 50px;
+}
+
+.search_input_container > input{
+    border: none;
+    background: none;
+    outline: none;
+}

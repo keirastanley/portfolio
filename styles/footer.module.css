@@ -1,0 +1,7 @@
+.footer {
+    background-color: gainsboro;
+    /* width: 100vw; */
+    height: 100px;
+    grid-area: footer;
+    /* border: 1px solid red; */
+}
