@@ -15,9 +15,11 @@ export default function Links(){
         <p>About Me</p>
         </div>
     </Link>
-    <div className={styles.link}>
-      <img src="/images/icons/soft-envelopes.png" className={styles.icon}></img>
-      <p>Contact</p>
-    </div>
+    <Link href="/contact/contact">
+      <div className={styles.link}>
+        <img src="/images/icons/soft-envelopes.png" className={styles.icon}></img>
+        <p>Contact</p>
+      </div>
+    </Link>
   </div>
 }
