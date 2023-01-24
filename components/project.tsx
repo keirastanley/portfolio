@@ -27,7 +27,8 @@ export default function Project({view, setView} : propsObjType) {
                 <img src="/images/icons/soft-projects.png" className={styles.projects_icon}></img>
                 <p>All projects</p>
             </div>
-            <div className={styles.hover_container}>
+            {
+                view.todos.length > 0 ? <div className={styles.hover_container}>
                 <div className={styles.hover_target}>
                     <img src="/images/icons/soft-notebook.png" className={styles.todo_icon}></img>
                     <p tabIndex={0}>To dos</p>
@@ -36,7 +37,8 @@ export default function Project({view, setView} : propsObjType) {
                     {view.todos.map(todo => <li key={todo}>{todo}</li>)}
                 </ul>
                 </aside>
-            </div>
+            </div> : null
+            }
             <div className={styles.help_icons}>
             {view.tags.map(element => element.info.text.length > 0 ?
                 <div className={styles.hover_container} key={element.info.text}>
