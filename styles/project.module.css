@@ -75,6 +75,7 @@
     border-radius: 5px;
     margin-top: 15px;
     gap: 5px;
+    width: 200px;
 }
 
 .hover_container {
@@ -88,6 +89,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+    width: 80px;
     align-items: center;
     justify-content: center;
   }
