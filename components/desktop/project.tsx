@@ -39,6 +39,17 @@ export default function Project({projectView, setProjectView} : propsObjType) {
                 </aside>
             </div> : null
             }
+            {
+                projectView.collaborators.length > 0 ? <div className={styles.hover_container}>
+                <div className={styles.hover_target}>
+                    <img src="/images/icons/soft-users.png" className={styles.todo_icon}></img>
+                </div>
+                <aside className={styles.hover_popup}><ul>Collaborators:
+                    {projectView.collaborators.map(collaborator => <li key={collaborator.name}><a href={collaborator.link}>{collaborator.name}</a></li>)}
+                </ul>
+                </aside>
+            </div> : null
+            }
             <div className={styles.help_icons}>
             {projectView.tags.map(element => element.info.text.length > 0 ?
                 <div className={styles.hover_container} key={element.info.text}>

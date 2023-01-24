@@ -104,11 +104,11 @@ export const projects: projectArrType = [
         name: "Cheers",
         description: "An app to find the perfect bar. This was a team project. My main focuses were React.js and the backend.",
         collaborators: [
-            { name: "Rhona MacKay", link: "" },
-            { name: "Suzi Clark", link: "" },
-            { name: "Anthony Akinfoyeku", link: "" },
-            { name: "Greg Rutnam", link: "" },
-            { name: "Faseeh Ahmed", link: "" }
+            { name: "Rhona MacKay", link: "https://github.com/rhonamackay" },
+            { name: "Suzi Clark", link: "https://github.com/Suzi-Clark" },
+            { name: "Remi Akinfoyeku", link: "https://github.com/remiyeku" },
+            { name: "Greg Rutnam", link: "https://github.com/gregrutnam" },
+            { name: "Faseeh Ahmed", link: "https://github.com/faseehahmed1" }
         ],
         images: [
             "/images/cheers/main/cheers1.png", 
@@ -184,7 +184,7 @@ export const projects: projectArrType = [
         name: "Cyber-mix",
         description: "An app that makes use of the Spotify API to allow users to build playlists, eventually with the idea that they would be like digital mixtapes made for loved ones.",
         collaborators: [
-            { name: "Greg Rutnam", link: "" }
+            { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
         ],
         images: [
             "/images/cyber_mix/main/cybermix1.png", 

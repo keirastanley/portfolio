@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 header {
   display: flex;
   flex-direction: column;
