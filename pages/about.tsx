@@ -1,4 +1,4 @@
-import AboutMe from "@/components/aboutme";
+import AboutMe from "@/components/about";
 import Head from "next/head";
 
 export default function AboutMePage(){

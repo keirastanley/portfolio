@@ -2,12 +2,13 @@ import Links from '@/components/links'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import Footer from '@/components/footer'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
     <Head>
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Pen+Script&family=VT323&display=swap" rel="stylesheet"/>
+      <link rel="icon" href="/images/icons/soft-typing-hand.png" />
     </Head>
     <div className="page_container">
       <div className="main_container">
@@ -17,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
       </div>
       <div className="footer">
-        <div className="footer-fixed-info">Keira Stanley</div>
+        <div className="footer-fixed-info"><Link href="/about">Keira Stanley</Link></div>
         <div className="footer-fixed-info-2">
           <a href="https://github.com/keirastanley"><img src="/images/icons/soft-github.png"></img></a>
           <a href="https://linkedin.com/in/keirastanley"><img src="/images/icons/soft-linkedin.png"></img></a></div>

@@ -112,6 +112,10 @@ header {
   font-family: 'VT323';
 }
 
+.footer-fixed-info a {
+  font-family: 'VT323';
+}
+
 .footer-fixed-info-2 {
   background-color: gainsboro;
   z-index: 2;
