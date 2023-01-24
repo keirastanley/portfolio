@@ -26,7 +26,7 @@ export const projects: projectArrType = [
         link: "https://keirastanley.github.io/personal-dashboard/",
         repo: "https://github.com/keirastanley/personal-dashboard",
         todos: [
-            "Make CSS fully responsive",
+            "Make all CSS fully responsive",
             "Make API routes for things to do, idea generator, favourited links and goals",
             "Swap hard-coded images for art from my database", "Flesh out about and help pages"
         ],
@@ -43,7 +43,7 @@ export const projects: projectArrType = [
                 topic: "React.js", 
                 info: 
                 { 
-                    text: "The frontend was fully built in React. I used useReducer to handle the multiple state changes for certain complex areas such as my goals and things to do sections which need to handle adding and removing entries, different sorting algorithms (by name, date, deadline, progress etc.), states such as whether items are starred or their completion status etc.", 
+                    text: "The frontend was built entirely with React, utilising useReducer for handling multiple state changes in complex areas such as the goals and tasks sections which include adding and removing entries, sorting algorithms (by name, date, deadline, progress, etc.), and states like starred or completion status.", 
                     images: [""] 
                 } 
             }, 
@@ -51,7 +51,7 @@ export const projects: projectArrType = [
                 topic: "React Router", 
                 info: 
                 { 
-                    text: "I used React Router to build multipage functionality into my app. As well as routes for the different pages, I also built a component to display a 404 message if users try to access any route not listed and an error element to display the appropriate error message if something else goes wrong.", 
+                    text: "I implemented React Router for multipage functionality in my app, including routes for different pages, a custom component for displaying a 404 message for non-existent routes, and an error element for displaying error messages.", 
                     images: [""] 
                 } 
             },
@@ -67,7 +67,7 @@ export const projects: projectArrType = [
                 topic: "Figma", 
                 info: 
                 { 
-                    text: "I designed the prototypes for my dashboard on Figma to help me plan the CSS and the different routes and functionality I would need for the site.", 
+                    text: "", 
                     images: [
                         "/images/personal_dashboard/figma/personal_dashboard_figma1.png", 
                         "/images/personal_dashboard/figma/personal_dashboard_figma2.png"
@@ -78,7 +78,7 @@ export const projects: projectArrType = [
                 topic: "API", 
                 info: 
                 { 
-                    text: "My personal dashboard currently has 2 API routes - one for the poems and one for the artwork. The poem generator on the homepage pulls random poems from a poem API but if the user clicks on the heart, they're able to save a poem to their reading list. This makes a POST request to my API which inserts the poem's details into a table in my database hosted on ElephantSQL. The artwork was sourced from the Met Museum's API - I made a few searches for terms relevant to my interests such as Impressionism, Fauvism, Monet etc., and using a loop I added the results to another table in the same database. On the frontend, my reading list and gallery both make GET requests to display all the poems and artwork and there is also a DELETE route for the reading list which allows me to remove any poems I no longer want saved.", 
+                    text: "My personal dashboard has two API routes, one for poems and one for artwork. The homepage's poem generator pulls random poems from a poem API and allows users to save them to their reading list with a POST request to my API, adding the poem's details to a table in my ElephantSQL hosted database. The artwork was sourced from the Met Museum's API through searches for specific terms, like Impressionism, Fauvism, Monet, etc. and added to another table in the same database. The frontend's reading list and gallery make GET requests to display all poems and artwork, and there is also a DELETE route for the reading list to remove any unwanted poems.", 
                     images: [""] 
                 } 
             },
@@ -124,7 +124,7 @@ export const projects: projectArrType = [
                 topic: "Backend", 
                 info: 
                 { 
-                    text: "Our backend was built using an Express app with dotenv to securely store our database credentials and cors to give our frontend access without being blocked. We used MongoDB to store our data and had 2 API routes, one to get all bars within 20000m of the location entered by the user and another to return the results of a subsequent search using the filters on the frontend.", 
+                    text: "Our backend was built with Express, dotenv for secure database credentials storage, and cors for unrestricted frontend access. We used MongoDB as our database and have 4 API routes: to get all bars, all bars within 20000m of the user-entered location, get a bar by id and return filtered search results from the frontend.", 
                     images: [
                         "/images/cheers/backend/cheersbackend1.png", 
                         "/images/cheers/backend/cheersbackend2.png"
@@ -143,14 +143,14 @@ export const projects: projectArrType = [
                 topic: "Next.js", 
                 info: 
                 { 
-                    text: "We used Next.js because we were building a multi-page site. I helped to initialise the Next app with Typescript and lay out the routes in the pages folder. After struggling for a while to determine how to pass props between pages, I discovered we could use the Link component and pass data through its href property. This allowed us to pass the user's location from the landing page to the results page to be inserted in the fetch request.", images: [""] 
+                    text: "We used Next.js for building a multi-page site. I helped to initialize the Next app with Typescript, set up routes in the pages folder and found a way to pass props between pages with the Link component and its href property, to pass the user's location entered in the landing page to the results page to be put in the fetch request.", images: [""] 
                 } 
             }, 
             { 
                 topic: "TypeScript", 
                 info: 
                 { 
-                    text: "We decided to use TypeScript because we were a group of 6 and thought it would help to keep everyone on the same page. We created a types.tsx file to store our custom types and imported them as needed. This allowed us to find errors in our data, such as a small typo in our database that led to an array being incorrectly formatted.", 
+                    text: "We decided to use TypeScript because it provides improved code readability and maintainability by catching errors early in the development process and allows for better collaboration among team members, as TypeScript's type system makes it easier for developers to understand the codebase. We created a types.tsx file to store our custom types and imported them as needed.", 
                     images: [""] 
                 } 
             },
@@ -166,7 +166,7 @@ export const projects: projectArrType = [
                 topic: "MongoDB", 
                 info: 
                 { 
-                    text: "We used MongoDB for our database because we wanted to leverage the geospatial queries MongoDB offers. Our main GET request after the user types in a location would insert that location's coordinates as a query and all results within 20000m of those coordinates would be returned. If the user applied any of our filters (such as Vibe, Venue or Rating), the user's selection would be stored in an array, reformatted into a MongoDB query in the backend and inserted as an extra query.", 
+                    text: "We chose MongoDB for our database because of its geospatial query capabilities. Our main GET request uses the user's location coordinates as a query to return all results within 20000m. If the user applies any filters (such as Vibe, Venue or Rating), the selection is stored in an array, reformatted into a MongoDB query and inserted as an extra query.", 
                     images: [""] 
                 } 
             }, 
@@ -174,7 +174,7 @@ export const projects: projectArrType = [
                 topic: "Teamwork and conflict resolution", 
                 info: 
                 { 
-                    text: "My team and I collaborated over zoom, using a Miro board to hold all our brainstorming and important infortmation and a Trello board to organise our sprints into tickets that could be delegated to each team member. We started each morning with a stand-up to discuss our intentions for the day. Then we'd split into pairs, each working on separate branches, merging to main at the end of the day. We met after lunch and before the end of the day for progress checks and always had an afternoon energiser to chat and play games together. We handled disagreements and decision-making through voting and were always able to come decisions that we could all stick to as a team.", 
+                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We had daily stand-ups, worked in pairs on separate branches, and had progress checks and afternoon energizers to boost morale. We handled disagreements and decision-making through group discussions and voting and were always able to come decisions that we could all stick to as a team.", 
                     images: [""] 
                 } 
             }
