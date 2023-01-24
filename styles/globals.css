@@ -72,6 +72,15 @@ header {
   justify-content: center;
 }
 
+@media only screen and (max-width: 650px) {
+  .window_container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+}
+
 
 @-webkit-keyframes ticker {
   0% {
@@ -167,4 +176,3 @@ header {
       font-size: 25px;
       font-family: 'VT323';
     }
-

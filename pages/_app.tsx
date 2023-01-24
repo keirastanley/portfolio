@@ -1,10 +1,23 @@
-import Links from '@/components/links'
+import Links from '@/components/desktop/links'
+import LinksMobile from '@/components/mobile/links'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  const [view, setView] = useState("desktop")
+
+  useEffect(() => {
+     window.matchMedia('(max-width: 650px)').matches ?  setView("mobile") : setView("desktop")
+ }, [])
+
+  useEffect(() => {
+      console.log(view)
+  }, [view])
+  
   return <>
     <Head>
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Pen+Script&family=VT323&display=swap" rel="stylesheet"/>
@@ -12,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     <div className="page_container">
       <div className="main_container">
-          <Links/>
+          {view === "desktop" ? <Links/> : <LinksMobile/>}
           <div className="window_container">
           <Component {...pageProps} />
           </div>
@@ -22,15 +35,15 @@ export default function App({ Component, pageProps }: AppProps) {
         <div className="footer-fixed-info-2">
           <a href="https://github.com/keirastanley"><img src="/images/icons/soft-github.png"></img></a>
           <a href="https://linkedin.com/in/keirastanley"><img src="/images/icons/soft-linkedin.png"></img></a></div>
-        <div className="ticker-wrap">
-          <div className="ticker">
-            <div className="ticker__item">Junior full-stack developer based in London.</div>
-            <div className="ticker__item">Experienced with JavaScript, HTML, CSS, Node.js, React.js, Next.js, PostgreSQL and Express.</div>
-            {/* <div className="ticker__item"></div> */}
-        </div>
-        </div>
+          {view === "desktop" ? <div className="ticker-wrap">
+            <div className="ticker">
+              <div className="ticker__item">Junior full-stack developer based in London.
+              </div>
+              <div className="ticker__item">Experienced with JavaScript, HTML, CSS, Node.js, React.js, Next.js, PostgreSQL and Express.
+              </div>
+          </div>
+        </div> : null}
       </div>
-      {/* <Footer/> */}
     </div>
   </>
 }

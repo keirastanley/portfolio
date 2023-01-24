@@ -1,4 +1,4 @@
-.aboutme_container {
+.about_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -9,10 +9,10 @@
     width: 750px;
 }
 
-.aboutme_text {
+.about_text {
     margin-top: 100px;
     width: 520px;
     height: 400px;
-    border-bottom: 10px solid white;
+    border-bottom: 20px solid white;
     overflow-y: auto;
 }

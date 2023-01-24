@@ -1,8 +1,8 @@
-import styles from "../styles/aboutme.module.css"
+import styles from "@/styles/mobile/about_mobile.module.css"
 
-export default function AboutMe() {
-    return <div className={styles.aboutme_container}>
-        <div className={styles.aboutme_text}>
+export default function AboutMeMobile() {
+    return <div className={styles.about_container}>
+        <div className={styles.about_text}>
             <p>Hi, I&#39;m Keira. 
             <br></br>
             <br></br>

@@ -1,0 +1,55 @@
+.project_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 230px;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project_info > i {
+    font-size: 15px;
+}
+
+    .weblinks {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .github_logo {
+        height: 30px;
+        width: 30px;
+    }
+
+.internet_logo {
+    height: 30px;
+    width: 30px;
+}
+
+.projects_icon{
+    height: 50px;
+}
+
+.all_projects{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    gap: 10px; 
+    cursor: pointer;
+}

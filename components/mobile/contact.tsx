@@ -1,6 +1,6 @@
-import styles from "../styles/contact.module.css"
+import styles from "@/styles/mobile/contact_mobile.module.css"
 
-export default function Contact() {
+export default function ContactMobile() {
     return <div className={styles.contact_container}>
                 <div className={styles.icon_container}>
                     <div className={styles.link}>

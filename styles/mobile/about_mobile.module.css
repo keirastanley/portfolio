@@ -1,0 +1,18 @@
+.about_container {
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/icons/soft-window-long.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 250px;
+  }
+
+  .about_text {
+    margin-top: 70px;
+    width: 200px;
+    height: 400px;
+    font-size: 15px;
+    border-bottom: 17px solid white;
+    overflow-y: auto;
+}

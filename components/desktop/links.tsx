@@ -1,4 +1,4 @@
-import styles from "../styles/links.module.css"
+import styles from "@/styles/desktop/links.module.css"
 import Link from "next/link"
 
 export default function Links(){
