@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     const [view, setView] = useState("desktop")
 
     useEffect(() => {
-       window.matchMedia('(max-width: 1024px)').matches ?  setView("mobile") : setView("desktop")
+       window.matchMedia('(max-width: 650px)').matches ?  setView("mobile") : setView("desktop")
    }, [])
 
     useEffect(() => {
