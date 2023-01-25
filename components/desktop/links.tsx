@@ -2,9 +2,16 @@ import styles from "@/styles/desktop/links.module.css"
 import Link from "next/link"
 
 export default function Links(){
+
+    function refreshPage() {
+      if(window.location.pathname === "/projects") {
+        window.location.reload()
+      }
+    }
+
     return <div className={styles.link_container}>
     <Link href="/projects">
-        <div className={styles.link}>
+        <div className={styles.link} onClick={refreshPage}>
         <img src="/images/icons/soft-projects.png" className={styles.icon}></img>
         <p>Projects</p>
         </div>
