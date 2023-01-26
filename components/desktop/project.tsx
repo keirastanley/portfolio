@@ -14,7 +14,7 @@ export default function Project({setSingleProjectView, projectIndex} : propsObjT
 
     return <>{
     projects.map((project, index) => index === projectIndex ? 
-    <div className={styles.window_container}>
+    <div className={styles.window_container} key={index}>
         <div className={styles.project_container}>
             <div className={styles.project_info}>
                 <div className={styles.weblinks}>
