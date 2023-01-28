@@ -1,7 +1,15 @@
+.window_container {
+    width: 220px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 400px;
     width: 230px;
@@ -10,46 +18,180 @@
 .project_info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    width: 220px;
     gap: 20px;
-    height: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 20px;
 }
 
-.project_info > i {
+.project_info>i {
+    font-size: 13px;
+}
+
+.weblinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weblinks>h4 {
+    text-align: center;
     font-size: 15px;
+    width: 200px;
 }
 
-    .weblinks {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 10px;
-    }
 
-    .github_logo {
-        height: 30px;
-        width: 30px;
-    }
+.github_logo {
+    height: 30px;
+    width: 30px;
+}
 
 .internet_logo {
     height: 30px;
     width: 30px;
 }
 
-.projects_icon{
+.weblinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.github_logo {
+    height: 20px;
+    width: 20px;
+}
+
+.internet_logo {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Below not yet optimised for mobile view */
+
+.projects_icon {
     height: 50px;
 }
 
-.all_projects{
-    font-size: 12px;
+.topics_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 120px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.help_icon {
+    height: 30px;
+}
+
+.todo_icon {
+    height: 30px;
+}
+
+.hover_container {
+    position: relative;
+}
+
+.hover_target {
+    position: relative;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
+    width: 80px;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    gap: 10px; 
-    cursor: pointer;
+}
+
+.hover_popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 70%;
+    left: 5%;
+    width: 350px;
+    margin: min(1rem, 20px);
+    font-size: .8rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5em;
+    z-index: 42;
+    transform: scale(0);
+    transition: transform 200ms ease;
+    transform-origin: 8% -10px;
+    border: 1px solid black;
+}
+
+.hover_target:hover {
+    text-decoration: underline;
+}
+
+.hover_target:hover+.hover_popup,
+.hover_target:focus+.hover_popup,
+.hover_popup:hover {
+    transform: scale(1);
+}
+
+.hover_popup :not(:first-child) {
+    margin-top: 1rem;
+}
+
+.hover_popup span {
+    color: rgb(200, 20, 0);
+    font-weight: 700;
+}
+
+.hover_popup::before {
+    /* This is the triangle/arrow */
+    content: '';
+    position: absolute;
+    /* border-left: 10px solid transparent;
+      border-right: 10px solid transparent; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 10px solid #fff;
+    top: -10px;
+}
+
+.hover_popup::after {
+    /* This is merely here to expand the hoverable area, as a buffer between the "Hover me" text and the popup. */
+    content: '';
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.arrows_container {
+    width: 220px;
+    height: 50px;
+    display: flex;
+}
+
+.arrow_left {
+    height: 50px;
+    width: 50px;
+}
+
+.arrow_right {
+    width: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.arrow_space {
+    width: 250px;
 }

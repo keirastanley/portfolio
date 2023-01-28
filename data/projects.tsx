@@ -197,16 +197,21 @@ export const projects: projectArrType = [
         link: "",
         repo: "https://github.com/gregrutnam/playlistapp",
         todos: [
-            "Deploy the backend to allow users to save their mixes",
-            "Allow users to add comments, messages and dedications to their playlist",
-            "Finish CSS"
+            "Store Spotify access token in local storage so user is not prompted to log in whenever the page refreshes or a component re-renders",
+            "Deploy the frontend on Vercel and the backend on Render",
+            "Allow users to log out of Spotify if desired", 
+            "Allow users to edit a playlist after creation",
+            "Allow users to add comments to songs added to their playlists",
+            "allow users to delete a playlist both from their Spotify account and from our database",
+            "Update the database to include columns for the playlist's images and external url",
+            "Finish the design and CSS for all pages"
         ],
         tags: [
             { 
                 topic: "React.js", 
                 info: 
                 { 
-                    text: "", 
+                    text: "We used React.js to create a dynamic and interactive user interface, using reusable components for adding songs, displaying tracks and handling authorising Spotify users the view the playlists you make on the site.", 
                     images: [""]
                 } 
             }, 
@@ -214,7 +219,7 @@ export const projects: projectArrType = [
                 topic: "React Router", 
                 info: 
                 { 
-                    text: "", 
+                    text: "The multipage functionality for this website was implemented using React Router. Users can log in with their Spotify account and navigate to the landing page where they can create and manage playlists, add songs, and view their existing playlists. Each playlist's pathname is conditionally rendered using its unique ID, eliminating the need for separate pages for each playlist.", 
                     images: [""] 
                 } 
             },
@@ -235,10 +240,18 @@ export const projects: projectArrType = [
                 } 
             },
             { 
-                topic: "Authorisation flow", 
+                topic: "Spotify Authorisation flow", 
                 info: 
                 { 
-                    text: "", 
+                    text: "We implemented an authorization flow in our website that controlled access to Spotify's API. On our landing page, users are prompted to log in with their Spotify account where they can grant our website permission to access their Spotify account with the appropriate scopes. We then use the access token provided by Spotify to authenticate the user and make authorized API calls on their behalf to create, update, and delete playlists on their Spotify account.", 
+                    images: [""]
+                } 
+            },
+            { 
+                topic: "Authorisation", 
+                info: 
+                { 
+                    text: "When creating a new playlist, users can give access to other Spotify users by searching for their username. A fetch request is made to GET that user's details using Spotify's API. If successful, the user's details are displayed and can be confirmed for access. If the request returns a 404, the user is prompted to enter a valid Spotify username. After the playlist is created, the usernames of the creator and any granted users are added to the 'access' column of our database, allowing only those users to view the playlist when visiting the 'My mixes' page on our site.", 
                     images: [""]
                 } 
             },
