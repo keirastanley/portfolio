@@ -23,7 +23,7 @@ export const projects: projectArrType = [
         description: "My personal homepage, combining organisation tools with sources of inspiration.",
         collaborators: [],
         images: ["/images/personal_dashboard/main/personaldashboard1.png", "/images/personal_dashboard/main/personaldashboard2.png", "/images/personal_dashboard/main/personaldashboard3.png"],
-        link: "https://keirastanley.github.io/personal-dashboard/",
+        link: "https://personal-dashboard-keirastanley.vercel.app",
         repo: "https://github.com/keirastanley/personal-dashboard",
         todos: [
             "Make all CSS fully responsive",
