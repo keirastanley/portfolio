@@ -20,7 +20,7 @@ export const topics = [
 export const projects: projectArrType = [
     {
         name: "Personal dashboard",
-        description: "My personal dream homepage, combining organisation tools with sources of inspiration.",
+        description: "My personal homepage, combining organisation tools with sources of inspiration.",
         collaborators: [],
         images: ["/images/personal_dashboard/main/personaldashboard1.png", "/images/personal_dashboard/main/personaldashboard2.png", "/images/personal_dashboard/main/personaldashboard3.png"],
         link: "https://keirastanley.github.io/personal-dashboard/",
@@ -102,7 +102,7 @@ export const projects: projectArrType = [
     },
     {
         name: "Cheers",
-        description: "An app to find the perfect bar. This was a team project. My main focuses were React.js and the backend.",
+        description: "A site to help you find the perfect bar. This was a full-stack team project completed in 3 sprints over 4 weeks.",
         collaborators: [
             { name: "Rhona MacKay", link: "https://github.com/rhonamackay" },
             { name: "Suzi Clark", link: "https://github.com/Suzi-Clark" },
@@ -182,14 +182,14 @@ export const projects: projectArrType = [
     },
     {
         name: "Cyber-mix",
-        description: "An app that makes use of the Spotify API to allow users to build playlists, eventually with the idea that they would be like digital mixtapes made for loved ones.",
+        description: "An app that makes use of the Spotify API to allow users to build and manage playlists that they can share with others.",
         collaborators: [
             { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
         ],
         images: [
             "/images/cyber_mix/main/cybermix1.png", 
             "/images/cyber_mix/main/cybermix2.png", 
-            "/images/cyber_mix/main/cybermix3.png", 
+            // "/images/cyber_mix/main/cybermix3.png", 
             "/images/cyber_mix/main/cybermix4.png", 
             "/images/cyber_mix/main/cybermix5.png", 
             "/images/cyber_mix/main/cybermix6.png",
@@ -199,12 +199,9 @@ export const projects: projectArrType = [
         link: "https://playlistapp-nine.vercel.app",
         repo: "https://github.com/gregrutnam/playlistapp",
         todos: [
-            "Store Spotify access token in local storage so user is not prompted to log in whenever the page refreshes or a component re-renders",
-            "Deploy the frontend on Vercel and the backend on Render",
             "Allow users to log out of Spotify if desired", 
-            "Allow users to edit a playlist after creation",
             "Allow users to add comments to songs added to their playlists",
-            "allow users to delete a playlist both from their Spotify account and from our database",
+            "Allow users to delete a playlist both from their Spotify account and from our database",
             "Update the database to include columns for the playlist's images and external url",
             "Finish the design and CSS for all pages"
         ],
@@ -269,7 +266,7 @@ export const projects: projectArrType = [
     },
     {
         name: "Trivia game",
-        description: "A 2-player quiz game that makes use of a trivia API.",
+        description: "A throwback to my first JavaScript project - a 2-player quiz game that makes use of a trivia API.",
         collaborators: [],
         images: [
             "/images/trivia_game/main/triviagame1.png", 
