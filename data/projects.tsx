@@ -192,9 +192,11 @@ export const projects: projectArrType = [
             "/images/cyber_mix/main/cybermix3.png", 
             "/images/cyber_mix/main/cybermix4.png", 
             "/images/cyber_mix/main/cybermix5.png", 
-            "/images/cyber_mix/main/cybermix6.png"
+            "/images/cyber_mix/main/cybermix6.png",
+            "/images/cyber_mix/main/cybermix7.png", 
+            "/images/cyber_mix/main/cybermix8.png"
         ],
-        link: "",
+        link: "https://playlistapp-nine.vercel.app",
         repo: "https://github.com/gregrutnam/playlistapp",
         todos: [
             "Store Spotify access token in local storage so user is not prompted to log in whenever the page refreshes or a component re-renders",

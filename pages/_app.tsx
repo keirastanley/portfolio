@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <div className="ticker">
               <div className="ticker__item">Junior full-stack developer based in London.
               </div>
-              <div className="ticker__item">Experienced with JavaScript, HTML, CSS, Node.js, React.js, Next.js, PostgreSQL and Express.
+              <div className="ticker__item">Experienced with JavaScript, HTML, TypeScript, CSS, Node.js, React.js, Next.js, PostgreSQL and Express.
               </div>
           </div>
         </div> : null}
