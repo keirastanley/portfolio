@@ -1,7 +1,9 @@
 import styles from "@/styles/desktop/contact.module.css"
+import Link from "next/link"
 
 export default function Contact() {
     return <div className={styles.contact_container}>
+                <div className={styles.close_button}><Link href="/"><button></button></Link></div>
                 <div className={styles.icon_container}>
                     <div className={styles.link}>
                         <img src="/images/icons/soft-github.png"></img>

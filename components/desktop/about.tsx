@@ -1,7 +1,10 @@
 import styles from "@/styles/desktop/about.module.css"
+import Link from "next/link"
 
 export default function AboutMe() {
     return <div className={styles.about_container}>
+        
+            <div className={styles.close_button}><Link href="/"><button></button></Link></div>
         <div className={styles.about_text}>
             <p>Hi, I&#39;m Keira. 
             <br></br>
