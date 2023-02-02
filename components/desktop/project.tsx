@@ -44,6 +44,7 @@ export default function Project({setSingleProjectView, projectIndex} : propsObjT
                     </aside>
                 </div> : null
                 }
+                <div className={styles.help_icons}>
                 {
                     project.collaborators.length > 0 ? <div className={styles.hover_container}>
                     <div className={styles.hover_target}>
@@ -55,7 +56,6 @@ export default function Project({setSingleProjectView, projectIndex} : propsObjT
                     </aside>
                 </div> : null
                 }
-                <div className={styles.help_icons}>
                 {project.tags.map(element => element.info.text.length > 0 ?
                     <div className={styles.hover_container} key={element.info.text}>
                         <div className={styles.hover_target}>

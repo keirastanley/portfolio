@@ -19,6 +19,94 @@ export const topics = [
 
 export const projects: projectArrType = [
     {
+        name: "Cheers",
+        description: "A site to help you find the perfect bar. This was a full-stack team project completed in 3 sprints over 4 weeks.",
+        collaborators: [
+            { name: "Rhona MacKay", link: "https://github.com/rhonamackay" },
+            { name: "Suzi Clark", link: "https://github.com/Suzi-Clark" },
+            { name: "Remi Akinfoyeku", link: "https://github.com/remiyeku" },
+            { name: "Greg Rutnam", link: "https://github.com/gregrutnam" },
+            { name: "Faseeh Ahmed", link: "https://github.com/faseehahmed1" }
+        ],
+        images: [
+            "/images/cheers/main/cheers1.png", 
+            "/images/cheers/main/cheers2.png", 
+            "/images/cheers/main/cheers3.png", 
+            "/images/cheers/main/cheers4.png"
+        ],
+        link: "https://cheersy.vercel.app",
+        repo: "https://github.com/SchoolOfCode/bc13_final-project_front-end-beast-code",
+        todos: [],
+        tags: [
+            { 
+                topic: "Backend", 
+                info: 
+                { 
+                    text: "Our backend was built with Express, dotenv for secure database credentials storage, and cors for unrestricted frontend access. We used MongoDB as our database and have 4 API routes: to get all bars, all bars within 20000m of the user-entered location, get a bar by id and return filtered search results from the frontend.", 
+                    images: [
+                        "/images/cheers/backend/cheersbackend1.png", 
+                        "/images/cheers/backend/cheersbackend2.png"
+                    ] 
+                } 
+            },
+            { 
+                topic: "React.js", 
+                info: 
+                { 
+                    text: "The frontend was built using Next.js and React. This was one of the areas where I contributed most heavily to the project. My main focus was the results page, including the filter dropdowns and their functionality, the advanced filter panel, the fetch requests to the backend, displaying the results of the request on the screen and some CSS.", 
+                    images: [""] 
+                } 
+            }, 
+            { 
+                topic: "Next.js", 
+                info: 
+                { 
+                    text: "We used Next.js for building a multi-page site. I helped to initialize the Next app with Typescript, set up routes in the pages folder and found a way to pass props between pages with the Link component and its href property, to pass the user's location entered in the landing page to the results page to be put in the fetch request.", images: [""] 
+                } 
+            }, 
+            { 
+                topic: "TypeScript", 
+                info: 
+                { 
+                    text: "We decided to use TypeScript because it provides improved code readability and maintainability by catching errors early in the development process and allows for better collaboration among team members. Using TypeScript helped us catch some formatting errors in our database that might otherwise have been missed. We created a types.tsx file to store our custom types and imported them as needed.", 
+                    images: [""] 
+                } 
+            },
+            { 
+                topic: "API", 
+                info: 
+                { 
+                    text: "", 
+                    images: [""] 
+                } 
+            },
+            { 
+                topic: "MongoDB", 
+                info: 
+                { 
+                    text: "We chose MongoDB for our database because of its geospatial query capabilities. Our main GET request uses the user's location coordinates as a query to return all results within 20000m. If the user applies any filters (such as Vibe, Venue or Rating), the selection is stored in an array, reformatted into a MongoDB query and inserted as an extra query.", 
+                    images: [""] 
+                } 
+            }, 
+            { 
+                topic: "Teamwork and conflict resolution", 
+                info: 
+                { 
+                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We had daily stand-ups, worked in pairs on separate branches, and had progress checks and afternoon energizers to boost morale. We handled disagreements and decision-making through group discussions and voting and were always able to come decisions that we could all stick to as a team.", 
+                    images: [""] 
+                } 
+            },
+            { 
+                topic: "Testing", 
+                info: 
+                { 
+                    text: "Our team adopted a test-driven development approach, utilizing Jest and the React Testing Library to test that each page was rendering the components we expected and Cypress for end-to-end testing. We followed the practice of writing tests before building components, resulting in comprehensive test coverage and ensuring that the site functions as desired.", 
+                    images: [""] 
+                } 
+            }
+        ]
+    },
+    {
         name: "Personal dashboard",
         description: "My personal homepage, combining organisation tools with sources of inspiration.",
         collaborators: [],
@@ -95,86 +183,6 @@ export const projects: projectArrType = [
                 info: 
                 { 
                     text: "", 
-                    images: [""] 
-                } 
-            }
-        ]
-    },
-    {
-        name: "Cheers",
-        description: "A site to help you find the perfect bar. This was a full-stack team project completed in 3 sprints over 4 weeks.",
-        collaborators: [
-            { name: "Rhona MacKay", link: "https://github.com/rhonamackay" },
-            { name: "Suzi Clark", link: "https://github.com/Suzi-Clark" },
-            { name: "Remi Akinfoyeku", link: "https://github.com/remiyeku" },
-            { name: "Greg Rutnam", link: "https://github.com/gregrutnam" },
-            { name: "Faseeh Ahmed", link: "https://github.com/faseehahmed1" }
-        ],
-        images: [
-            "/images/cheers/main/cheers1.png", 
-            "/images/cheers/main/cheers2.png", 
-            "/images/cheers/main/cheers3.png", 
-            "/images/cheers/main/cheers4.png"
-        ],
-        link: "https://cheersy.vercel.app",
-        repo: "https://github.com/SchoolOfCode/bc13_final-project_front-end-beast-code",
-        todos: [],
-        tags: [
-            { 
-                topic: "Backend", 
-                info: 
-                { 
-                    text: "Our backend was built with Express, dotenv for secure database credentials storage, and cors for unrestricted frontend access. We used MongoDB as our database and have 4 API routes: to get all bars, all bars within 20000m of the user-entered location, get a bar by id and return filtered search results from the frontend.", 
-                    images: [
-                        "/images/cheers/backend/cheersbackend1.png", 
-                        "/images/cheers/backend/cheersbackend2.png"
-                    ] 
-                } 
-            },
-            { 
-                topic: "React.js", 
-                info: 
-                { 
-                    text: "The frontend was built using Next.js and React. This was one of the areas where I contributed most heavily to the project. My main focus was the results page, including the filter dropdowns and their functionality, the advanced filter panel, the fetch requests to the backend, displaying the results of the request on the screen and some CSS.", 
-                    images: [""] 
-                } 
-            }, 
-            { 
-                topic: "Next.js", 
-                info: 
-                { 
-                    text: "We used Next.js for building a multi-page site. I helped to initialize the Next app with Typescript, set up routes in the pages folder and found a way to pass props between pages with the Link component and its href property, to pass the user's location entered in the landing page to the results page to be put in the fetch request.", images: [""] 
-                } 
-            }, 
-            { 
-                topic: "TypeScript", 
-                info: 
-                { 
-                    text: "We decided to use TypeScript because it provides improved code readability and maintainability by catching errors early in the development process and allows for better collaboration among team members, as TypeScript's type system makes it easier for developers to understand the codebase. We created a types.tsx file to store our custom types and imported them as needed.", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "API", 
-                info: 
-                { 
-                    text: "", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "MongoDB", 
-                info: 
-                { 
-                    text: "We chose MongoDB for our database because of its geospatial query capabilities. Our main GET request uses the user's location coordinates as a query to return all results within 20000m. If the user applies any filters (such as Vibe, Venue or Rating), the selection is stored in an array, reformatted into a MongoDB query and inserted as an extra query.", 
-                    images: [""] 
-                } 
-            }, 
-            { 
-                topic: "Teamwork and conflict resolution", 
-                info: 
-                { 
-                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We had daily stand-ups, worked in pairs on separate branches, and had progress checks and afternoon energizers to boost morale. We handled disagreements and decision-making through group discussions and voting and were always able to come decisions that we could all stick to as a team.", 
                     images: [""] 
                 } 
             }
@@ -261,7 +269,7 @@ export const projects: projectArrType = [
                     text: "", 
                     images: [""] 
                 } 
-            }
+            },
         ]
     },
     {
