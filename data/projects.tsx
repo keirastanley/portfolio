@@ -92,7 +92,7 @@ export const projects: projectArrType = [
                 topic: "Teamwork and agile methodology", 
                 info: 
                 { 
-                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We incorporated the principles of Agile methodology into our sprint planning, allowing us to respond to user feedback and changing requirements as needed. We had daily stand-ups in the morning and retros in the afternoon to make sure we were staying on track. We worked in pairs on separate branches and then reviewed finished code in groups of 3 because we had set up git branch protection to ensure that no one could push to main without 2 approvals.", 
+                    text: "My team incorporated the principles of agile methodology into our sprint planning, allowing us to respond to user feedback and changing requirements as needed. We had daily stand-ups and retros to monitor progress. We set up git branch protection to ensure no one could push to main without approval, worked in pairs on separate branches and then handled code reviews and merge conflicts in group of 3.", 
                     images: [""] 
                 } 
             },
