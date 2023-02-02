@@ -89,10 +89,10 @@ export const projects: projectArrType = [
                 } 
             }, 
             { 
-                topic: "Teamwork and conflict resolution", 
+                topic: "Teamwork and agile methodology", 
                 info: 
                 { 
-                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We had daily stand-ups, worked in pairs on separate branches, and had progress checks and afternoon energizers to boost morale. We handled disagreements and decision-making through group discussions and voting and were always able to come decisions that we could all stick to as a team.", 
+                    text: "My team and I collaborated remotely on Zoom, using Miro for brainstorming and information sharing, and Trello for sprint organization and task delegation. We incorporated the principles of Agile methodology into our sprint planning, allowing us to respond to user feedback and changing requirements as needed. We had daily stand-ups in the morning and retros in the afternoon to make sure we were staying on track. We worked in pairs on separate branches and then reviewed finished code in groups of 3 because we had set up git branch protection to ensure that no one could push to main without 2 approvals.", 
                     images: [""] 
                 } 
             },
