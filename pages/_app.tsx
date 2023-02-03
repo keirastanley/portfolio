@@ -41,6 +41,8 @@ export default function App({ Component, pageProps }: AppProps) {
               </div>
               <div className="ticker__item">Experienced with JavaScript, HTML, TypeScript, CSS, Node.js, React.js, Next.js, PostgreSQL and Express.
               </div>
+              <div className="ticker__item">Currently learning Python and how to build mobile apps with React Native.
+              </div>
           </div>
         </div> : null}
       </div>
