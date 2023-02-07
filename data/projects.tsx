@@ -204,8 +204,8 @@ export const projects: projectArrType = [
             "/images/cyber_mix/main/cybermix7.png", 
             "/images/cyber_mix/main/cybermix8.png"
         ],
-        link: "https://playlistapp-nine.vercel.app",
-        repo: "https://github.com/gregrutnam/playlistapp",
+        link: "https://cybermix.vercel.app",
+        repo: "https://github.com/keirastanley/cybermix",
         todos: [
             "Allow users to log out of Spotify if desired", 
             "Allow users to add comments to songs added to their playlists",
