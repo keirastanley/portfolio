@@ -189,7 +189,7 @@ export const projects: projectArrType = [
         ]
     },
     {
-        name: "Cyber-mix",
+        name: "Cyber-Mix",
         description: "An app that makes use of the Spotify API to allow users to build and manage playlists that they can share with others.",
         collaborators: [
             { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
@@ -197,12 +197,13 @@ export const projects: projectArrType = [
         images: [
             "/images/cyber_mix/main/cybermix1.png", 
             "/images/cyber_mix/main/cybermix2.png", 
-            // "/images/cyber_mix/main/cybermix3.png", 
+            "/images/cyber_mix/main/cybermix3.png", 
             "/images/cyber_mix/main/cybermix4.png", 
             "/images/cyber_mix/main/cybermix5.png", 
             "/images/cyber_mix/main/cybermix6.png",
             "/images/cyber_mix/main/cybermix7.png", 
-            "/images/cyber_mix/main/cybermix8.png"
+            "/images/cyber_mix/main/cybermix8.png",
+            "/images/cyber_mix/main/cybermix9.png"
         ],
         link: "https://cybermix.vercel.app",
         repo: "https://github.com/keirastanley/cybermix",
