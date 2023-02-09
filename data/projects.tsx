@@ -203,7 +203,6 @@ export const projects: projectArrType = [
             "/images/cyber_mix/main/cybermix6.png",
             "/images/cyber_mix/main/cybermix7.png", 
             "/images/cyber_mix/main/cybermix8.png",
-            "/images/cyber_mix/main/cybermix9.png"
         ],
         link: "https://cybermix.vercel.app",
         repo: "https://github.com/keirastanley/cybermix",
