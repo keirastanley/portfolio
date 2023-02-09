@@ -192,7 +192,7 @@ export const projects: projectArrType = [
         name: "Cyber-Mix",
         description: "An app that makes use of the Spotify API to allow users to build and manage playlists that they can share with others.",
         collaborators: [
-            { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
+            // { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
         ],
         images: [
             "/images/cyber_mix/main/cybermix1.png", 
