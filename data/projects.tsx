@@ -141,10 +141,10 @@ export const projects: projectArrType = [
                 } 
             }, 
             { 
-                topic: "React Router", 
+                topic: "Next.js", 
                 info: 
                 { 
-                    text: "The multipage functionality for this website was implemented using React Router. Users can log in with their Spotify account and navigate to the landing page where they can create and manage playlists, add songs, and view their existing playlists. Each playlist's pathname is conditionally rendered using its unique ID, eliminating the need for separate pages for each playlist.", 
+                    text: "The multipage functionality for this website was implemented using Next.js. Users can log in with their Spotify account and navigate to the landing page where they can create and manage playlists, add songs, and view their existing playlists. Each playlist and track's pathname is conditionally rendered using its unique ID, eliminating the need for separate pages for each one.", 
                     images: [""] 
                 } 
             },
