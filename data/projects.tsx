@@ -107,92 +107,10 @@ export const projects: projectArrType = [
         ]
     },
     {
-        name: "Personal dashboard",
-        description: "My personal homepage, combining organisation tools with sources of inspiration.",
-        collaborators: [],
-        images: ["/images/personal_dashboard/main/personaldashboard1.png", "/images/personal_dashboard/main/personaldashboard2.png", "/images/personal_dashboard/main/personaldashboard3.png"],
-        link: "https://personal-dashboard-keirastanley.vercel.app",
-        repo: "https://github.com/keirastanley/personal-dashboard",
-        todos: [
-            "Make all CSS fully responsive",
-            "Make API routes for things to do, idea generator, favourited links and goals",
-            "Swap hard-coded images for art from my database", "Flesh out about and help pages"
-        ],
-        tags: [
-            { 
-                topic: "Backend", 
-                info: 
-                { 
-                    text: "The backend for my personal dashboard was built using Express to interact with a database I have hosted on ElephantSQL. My backend is fully deployed with Render and currently supports GET, POST and DELETE reuqests to my poem and art databases.", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "React.js", 
-                info: 
-                { 
-                    text: "The frontend was built entirely with React, utilising useReducer for handling multiple state changes in complex areas such as the goals and tasks sections which include adding and removing entries, sorting algorithms (by name, date, deadline, progress, etc.), and states like starred or completion status.", 
-                    images: [""] 
-                } 
-            }, 
-            { 
-                topic: "React Router", 
-                info: 
-                { 
-                    text: "I implemented React Router for multipage functionality in my app, including routes for different pages, a custom component for displaying a 404 message for non-existent routes, and an error element for displaying error messages.", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "JavaScript", 
-                info: 
-                { 
-                    text: "", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "Figma", 
-                info: 
-                { 
-                    text: "", 
-                    images: [
-                        "/images/personal_dashboard/figma/personal_dashboard_figma1.png", 
-                        "/images/personal_dashboard/figma/personal_dashboard_figma2.png"
-                    ] 
-                } 
-            },
-            { 
-                topic: "API", 
-                info: 
-                { 
-                    text: "My personal dashboard has two API routes, one for poems and one for artwork. The homepage's poem generator pulls random poems from a poem API and allows users to save them to their reading list with a POST request to my API, adding the poem's details to a table in my ElephantSQL hosted database. The artwork was sourced from the Met Museum's API through searches for specific terms, like Impressionism, Fauvism, Monet, etc. and added to another table in the same database. The frontend's reading list and gallery make GET requests to display all poems and artwork, and there is also a DELETE route for the reading list to remove any unwanted poems.", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "SQL", 
-                info: 
-                { 
-                    text: "I used ElephantSQL to host my database, so my GET, POST and DELETE requests call functions that inject SQL queries into my database.", 
-                    images: [""] 
-                } 
-            },
-            { 
-                topic: "Database", 
-                info: 
-                { 
-                    text: "", 
-                    images: [""] 
-                } 
-            }
-        ]
-    },
-    {
         name: "Cyber-Mix",
         description: "An app that makes use of the Spotify API to allow users to build and manage playlists that they can share with others.",
         collaborators: [
-            // { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
+            { name: "Greg Rutnam", link: "https://github.com/gregrutnam"  }
         ],
         images: [
             "/images/cyber_mix/main/cybermix1.png", 
@@ -231,10 +149,10 @@ export const projects: projectArrType = [
                 } 
             },
             { 
-                topic: "JavaScript", 
+                topic: "TypeScript", 
                 info: 
                 { 
-                    text: "", 
+                    text: "We used TypeScript for the frontend to minimise errors because there are a lot of large objects used in this project for the playlists, tracks, Spotify users etc. It was also a chance to consolidate our learning and develop greater confidence with the language.", 
                     images: [""] 
                 } 
             },
@@ -271,6 +189,88 @@ export const projects: projectArrType = [
                 } 
             },
         ]
+    },
+    {
+      name: "Personal dashboard",
+      description: "My personal homepage, combining organisation tools with sources of inspiration.",
+      collaborators: [],
+      images: ["/images/personal_dashboard/main/personaldashboard1.png", "/images/personal_dashboard/main/personaldashboard2.png", "/images/personal_dashboard/main/personaldashboard3.png"],
+      link: "https://personal-dashboard-keirastanley.vercel.app",
+      repo: "https://github.com/keirastanley/personal-dashboard",
+      todos: [
+          "Make all CSS fully responsive",
+          "Make API routes for things to do, idea generator, favourited links and goals",
+          "Swap hard-coded images for art from my database", "Flesh out about and help pages"
+      ],
+      tags: [
+          { 
+              topic: "Backend", 
+              info: 
+              { 
+                  text: "The backend for my personal dashboard was built using Express to interact with a database I have hosted on ElephantSQL. My backend is fully deployed with Render and currently supports GET, POST and DELETE requests to my poem and art databases.", 
+                  images: [""] 
+              } 
+          },
+          // { 
+          //     topic: "React.js", 
+          //     info: 
+          //     { 
+          //         text: "The frontend was built entirely with React, utilising useReducer for handling multiple state changes in complex areas such as the goals and tasks sections which include adding and removing entries, sorting algorithms (by name, date, deadline, progress, etc.), and states like starred or completion status.", 
+          //         images: [""] 
+          //     } 
+          // }, 
+          { 
+              topic: "React Router", 
+              info: 
+              { 
+                  text: "I implemented React Router for multipage functionality in my app, including routes for different pages, a custom component for displaying a 404 message for non-existent routes, and an error element for displaying error messages.", 
+                  images: [""] 
+              } 
+          },
+          { 
+              topic: "JavaScript", 
+              info: 
+              { 
+                  text: "", 
+                  images: [""] 
+              } 
+          },
+          { 
+              topic: "Figma", 
+              info: 
+              { 
+                  text: "", 
+                  images: [
+                      "/images/personal_dashboard/figma/personal_dashboard_figma1.png", 
+                      "/images/personal_dashboard/figma/personal_dashboard_figma2.png"
+                  ] 
+              } 
+          },
+          { 
+              topic: "API", 
+              info: 
+              { 
+                  text: "My personal dashboard has two API routes, one for poems and one for artwork. The homepage's poem generator pulls random poems from a poem API and allows users to save them to their reading list with a POST request to my API, adding the poem's details to a table in my ElephantSQL hosted database. The artwork was sourced from the Met Museum's API through searches for specific terms, like Impressionism, Fauvism, Monet, etc. and added to another table in the same database. The frontend's reading list and gallery make GET requests to display all poems and artwork, and there is also a DELETE route for the reading list to remove any unwanted poems.", 
+                  images: [""] 
+              } 
+          },
+          { 
+              topic: "SQL", 
+              info: 
+              { 
+                  text: "I used ElephantSQL to host my database, so my GET, POST and DELETE requests call functions that inject SQL queries into my database.", 
+                  images: [""] 
+              } 
+          },
+          { 
+              topic: "Database", 
+              info: 
+              { 
+                  text: "", 
+                  images: [""] 
+              } 
+          }
+      ]
     },
     {
         name: "Trivia game",

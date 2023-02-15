@@ -9,8 +9,6 @@ export default function Projects() {
     const [singleProjectView, setSingleProjectView] = useState(false)
     const [projectIndex, setProjectIndex] = useState(0)
 
-    console.log("hey", singleProjectView)
-
     return <div className={styles.projects_container}>
         <div className={styles.project_content}>
             <Link href="/">
